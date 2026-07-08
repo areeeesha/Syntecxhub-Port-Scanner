@@ -1,17 +1,62 @@
-# Multi-Threaded Port Scanner
+# Port Scanner
 
-A fast, lightweight, and efficient multi-threaded TCP port scanner written in Python. This tool utilizes a `ThreadPoolExecutor` to concurrently scan a range of target ports on a specified host, logging the results both to the console and a local log file.
+A fast, lightweight, and efficient multi-threaded TCP port scanner written in Python. This tool utilizes a `ThreadPoolExecutor` to concurrently scan a range of target ports on a specified host, logging the results to both the console and a local log file.
 
 ## Features
-* **Multi-Threaded Performance:** Dynamically scales up to 100 concurrent workers for fast scanning.
-* **Dual Logging:** Outputs clean, timestamps-enabled logs to both the terminal screen and `scan_result.log`.
-* **Graceful Error Handling:** Robust handling for unknown hosts, connection timeouts, and refused connections.
 
-## How to Run
+* **Multi-Threaded Performance:** Utilizes up to 100 concurrent worker threads for fast and efficient port scanning.
+* **Dual Logging:** Outputs clean, timestamped logs to both the terminal and `scan_result.log`.
+* **Graceful Error Handling:** Handles unknown hosts, connection timeouts, and refused connections gracefully.
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/areeeesha/Syntecxhub-Port-Scanner.git](https://github.com/areeeesha/Syntecxhub-Port-Scanner.git)
-   cd Syntecxhub-Port-Scanner
+## Installation
 
-This project is intended for educational purposes and was developed as part of a cybersecurity internship project at Syntecxhub
+Clone the repository:
+
+```bash
+git clone https://github.com/areeeesha/Syntecxhub-Port-Scanner.git
+```
+
+Move into the project folder:
+
+```bash
+cd Port-Scanner
+```
+
+---
+
+## Running the Program
+
+```bash
+python port_scanner.py
+```
+
+Example:
+
+```text
+Enter the host to scan: scanme.nmap.org
+Enter the starting port number: 20
+Enter the ending port number: 100
+```
+
+---
+
+## Output
+
+Example:
+
+```text
+PORT 22: OPEN
+PORT 23: CLOSED
+PORT 80: OPEN
+PORT 81: TIMEOUT
+```
+
+A complete log is also saved to:
+
+```text
+scan_result.log
+```
+
+---
+
+This project is intended for educational purposes and was developed as part of a cybersecurity internship project at **Syntecxhub**.
