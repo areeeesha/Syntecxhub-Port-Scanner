@@ -58,5 +58,3 @@ scan_result.log
 ```
 
 ---
-
-This project is intended for educational purposes and was developed as part of a cybersecurity internship project at **Syntecxhub**.
